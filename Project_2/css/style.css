@@ -1,0 +1,43 @@
+blockquote {
+    color: green;
+}
+
+a[href^='https'] {
+    color: red;
+}
+
+.list>a:last-child {
+    background-color: green;
+}
+
+ul+p {
+    font-size: 26px;
+}
+
+h3:first-child {
+    color: pink;
+}
+
+#greycol {
+    color: grey;
+}
+
+.text-box>div>p {
+    color: red;
+}
+
+p:nth-last-child(2) {
+    color: green;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.bg-box {
+    background: url("../image/lamp.png") left top repeat-x, url("../image/grass.png") left bottom repeat-x, url("../image/animal.png") left top repeat-y, url("../image/donut.png") right top repeat-y, url("../image/house.jpg") center no-repeat;
+    background-color: green;
+    background-size: 45px, 240px, 35px, 35px, 600px;
+    height: 768px;
+    width: 1024px;
+}
