@@ -1,0 +1,146 @@
+.container {
+    width: 600px;
+    height: 565px;
+    background-color: #0d5825;
+    position: relative;
+}
+
+.quote {
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 24px;
+    margin: 0;
+}
+
+.quote p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.card1 {
+    position: absolute;
+    left: 160px;
+    top: 200px;
+    transform: rotate(-25deg);
+    transition: top 0.4s ease;
+}
+
+.card2 {
+    position: absolute;
+    left: 215px;
+    top: 200px;
+    transform: rotate(-10deg);
+    transition: top 0.4s ease;
+}
+
+.card3 {
+    position: absolute;
+    left: 270px;
+    top: 220px;
+    transform: rotate(10deg);
+    transition: top 0.4s ease;
+}
+
+.card1:hover,
+.card2:hover {
+    top: 160px;
+}
+
+.card3:hover {
+    top: 180px;
+}
+
+.pink {
+    background: rgb(239, 71, 111);
+}
+
+.blue {
+    background: rgb(17, 138, 178);
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.green {
+    background: rgb(6, 214, 160);
+    right: 0;
+    bottom: 0;
+}
+
+.box-container {
+    margin: 10px;
+    position: relative;
+    height: 160px;
+    width: 160px;
+}
+
+.positioned {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+}
+
+.menu {
+    background-color: #808080;
+    width: 200px;
+    height: 400px;
+    position: relative;
+    left: -180px;
+    transition: left 0.5s ease;
+}
+
+.menu-title {
+    width: 20px;
+    writing-mode: vertical-rl;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.menu:hover {
+    left: 0;
+}
+
+.menu:hover .menu-title {
+    opacity: 0;
+}
+
+.links {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px 0 0 40px;
+    text-transform: uppercase;
+}
+
+li {
+    position: relative;
+    padding-bottom: 10px;
+    list-style: none;
+    transition: color 0.5s ease;
+}
+
+li:hover {
+    color: #ffa500;
+}
+
+li::before {
+    background-image: url('../img/rhombus.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    left: -25px;
+}
